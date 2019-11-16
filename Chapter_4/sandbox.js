@@ -77,20 +77,49 @@
 // console.log(bill([10,15,30],0.2))
 
 //------------------------------------------
-const name = 'shaun'
+// const name = 'shaun'
 
 // functions
-const greet = () => 'hello'
+// const greet = () => 'hello'
 
-let resultOne = greet()
-console.log(resultOne)
+// let resultOne = greet()
+// console.log(resultOne)
 
 // methods (use after dot notation)
 
-let resultTwo = name.toUpperCase();
-console.log(resultTwo)
+// let resultTwo = name.toUpperCase();
+// console.log(resultTwo)
 
+//------------------------------------------
+// callbacks & foreach
 
+// let people = ['jungkook', 'rapmon', 'jimin' ,'suga', 'jin']
 
+// people.forEach((person,index) =>{
+//     console.log(index, person)
+// })
+
+// const logPerson = (person,index) => {
+//     console.log(`${index} - hello ${person}`)
+// }
+
+// people.forEach(logPerson)
+
+//------------------------------------------
+// get a reference to the 'ul'
+const ul = document.querySelector('.people')
+
+const people = ['jungkook', 'rapmon', 'jimin' ,'suga', 'jin']
+
+let html = ``
+
+people.forEach(person => {
+    // create html template 
+    html += `<li style="color:purple">${person}</li>`
+
+})
+
+console.log(html)
+ul.innerHTML = html
 
 
