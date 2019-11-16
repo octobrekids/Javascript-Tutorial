@@ -115,6 +115,44 @@ const likes = 30
 
 // console.log(html)
 
+//----------------------------------
+// array
+let ninjas = ['shuan','ryu','chun-li']
+// console.log(ninjas)
+
+// ninjas[0] = 'ken'
+// console.log(ninjas[0])
+
+// let ages = [20,25,30,35]
+// console.log(ages[2])
+
+// let random = ['shuan','ryu',30,25]
+// console.log(random)
+
+// console.log(ninjas.length)
+
+// join the element in array with comma
+// let result = ninjas.join(',')
+// let result = ninjas.indexOf('ryu')
+
+// add new element in array
+// let result = ninjas.concat(['ken','jungkook'])
+
+// return the number of element after push the element
+let result = ninjas.push('ken')
+// return the value that is poped
+result = ninjas.pop()
+
+console.log(result)
+
+
+
+
+
+
+
+
+
 
 
 
