@@ -1,20 +1,20 @@
 // can change
-let age = 25 
-let year = 2019
+// let age = 25 
+// let year = 2019
 
-console.log(age, year) 
+// console.log(age, year) 
 
-age = 30
+// age = 30
 
 // to show the output at console
-console.log(age, year)
+// console.log(age, year)
 
 // dont want to change/overwrite value of variable
-const points = 1000 
-console.log(points)
+// const points = 1000 
+// console.log(points)
 
 // can do because changed only preview vaule not the value in varriable
-console.log(points+1500) 
+// console.log(points+1500) 
 
 
 //----------------------------------
@@ -139,11 +139,73 @@ let ninjas = ['shuan','ryu','chun-li']
 // let result = ninjas.concat(['ken','jungkook'])
 
 // return the number of element after push the element
-let result = ninjas.push('ken')
+// let result = ninjas.push('ken')
 // return the value that is poped
-result = ninjas.pop()
+// result = ninjas.pop()
 
-console.log(result)
+// console.log(result)
+
+//----------------------------------
+// boolean & comparisons
+console.log(true, false, "true", "false")
+
+// methods can return booleans
+let email = 'jungkook@gmail.com'
+let names = ['jungkook','rm','jin']
+
+// to check that the string include the value 
+// let result = email.includes('@')
+// let result = email.includes('jk')
+
+// console.log(result)
+
+// comparison operators
+// let age = 25
+// console.log(age == 25)
+// console.log(age == 30)
+// console.log(age !=30)
+
+// let name = 'jungkook'
+
+// console.log(name == ' jungkook')
+// console.log(name < 'jk')
+// console.log(name > 'jk')
+// console.log(name > 'JK')
+
+//----------------------------------
+let age = 25
+
+// loose comparison (different types can still be equal)
+
+// console.log(age == 25)
+// console.log(age == '25')
+// console.log(age != 25)
+// console.log(age != '25')
+
+// strict comparison (different types cannot be equal) '==='
+console.log(age === 25)
+console.log(age === '25') // false because check data type too
+
+//----------------------------------
+// type conversion
+let score = '100'
+
+// score = Number(score) // string -> number
+// console.log(score + 1)
+// console.log(typeof score)
+
+// let result = String('50')
+// console.log(result, typeof result)
+
+// let result = Boolean(100)
+// console.log(result, typeof result)
+
+// positive & minus number is true but 0 is false
+// let result = Boolean(0)
+
+// string with any length but not ' ' (empty) is all true
+let result = Boolean('0')
+console.log(result, typeof result)
 
 
 
