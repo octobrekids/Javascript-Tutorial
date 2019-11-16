@@ -94,18 +94,32 @@
 // title.style.fontSize = '60px'
 // title.style.margin = ''
 
-// ---------- CLASS LIST --------------
+// ---------- CLASSLIST --------------
 
-const content = document.querySelector('p')
+// const content = document.querySelector('p')
 
-console.log(content.classList)
-content.classList.add('error')
-content.classList.remove('error')
+// console.log(content.classList)
+// content.classList.add('error')
+// content.classList.remove('error')
 
-content.classList.add('success')
+// content.classList.add('success')
 
+// ---------- CHALLENGE --------------
+const content = document.querySelectorAll('p')
 
+content.forEach(line => {
+    // let result = String(line.innerText)
+    if(line.textContent.includes('success')){
+        line.classList.add('success')
+    }
+    else if(line.textContent.includes('error')){
+        line.classList.add('error')
+    }
+});
 
+const title = document.querySelector('.title')
+title.classList.toggle('test')
+title.classList.toggle('test')
 
 
 
