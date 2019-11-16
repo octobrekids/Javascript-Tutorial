@@ -41,6 +41,29 @@
 // console.log(paras)
 // console.log(paras[1])
 
+// ------------------------
+// const para = document.querySelector('p')
+
+// innerText is not a method is just a property name so dont use parenthesis
+// console.log(para.innerText)
+// para.innerText = 'ninjas are awesome!'
+
+// const paras = document.querySelectorAll('p')
+// paras.forEach(para => {
+//     console.log(para.innerText)
+//     para.innerText += ' new Text'
+// })
+
+const content = document.querySelector('.content')
+// console.log(content.innerHTML)
+// content.innerHTML = '<h2>this is a new h2</h2>'
+
+const people = ['mario','luigi','yoshi']
+
+people.forEach(person => {
+    content.innerHTML += `<p>${person}</p>`
+})
+
 
 
 
