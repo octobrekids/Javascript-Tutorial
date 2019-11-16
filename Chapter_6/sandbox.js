@@ -54,15 +54,62 @@
 //     para.innerText += ' new Text'
 // })
 
-const content = document.querySelector('.content')
+// const content = document.querySelector('.content')
 // console.log(content.innerHTML)
 // content.innerHTML = '<h2>this is a new h2</h2>'
 
-const people = ['mario','luigi','yoshi']
+// const people = ['mario','luigi','yoshi']
 
-people.forEach(person => {
-    content.innerHTML += `<p>${person}</p>`
-})
+// people.forEach(person => {
+//     content.innerHTML += `<p>${person}</p>`
+// })
+
+// ------------------------
+// get link from a href(attribute ' only href ')
+
+// const link = document.querySelector('a')
+// console.log(link.getAttribute('href'))
+// link.setAttribute('href','www.youtube.com')
+// link.innerHTML = 'youtube ja'
+
+
+// const mssg = document.querySelector('p')
+// console.log(mssg.getAttribute('class'))
+// mssg.setAttribute('class','success')
+
+//if doesnt exist first javascript gonna create it
+// mssg.setAttribute('style','color:green;')
+
+// ------------------------
+
+// const title = document.querySelector('h2')
+// overwrite (orange is gone)
+// title.setAttribute('style','margin: 50px;')
+
+// console.log(title.style)
+// console.log(title.style.color)
+
+// title.style.margin = '100px'
+// title.style.color = 'pink'
+// title.style.fontSize = '60px'
+// title.style.margin = ''
+
+// ---------- CLASS LIST --------------
+
+const content = document.querySelector('p')
+
+console.log(content.classList)
+content.classList.add('error')
+content.classList.remove('error')
+
+content.classList.add('success')
+
+
+
+
+
+
+
 
 
 
